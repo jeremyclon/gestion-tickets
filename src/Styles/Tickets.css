@@ -71,14 +71,29 @@ body {
 }
 
 /* Estilo de la notificación */
+/* Estilos para la notificación */
 .notificacion {
-  background-color: #ffcc00;
-  padding: 10px;
+  position: fixed;
+  top: 10px; /* Se coloca 10px debajo de la parte superior */
+  left: 50%;
+  transform: translateX(-50%); /* Centra la notificación */
+  background-color: #4caf50; /* Verde para éxito */
+  color: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
   text-align: center;
   font-weight: bold;
-  border-radius: 6px;
-  margin-bottom: 20px;
+  z-index: 9999; /* Asegura que esté encima de otros elementos */
+  width: auto;
+  max-width: 90%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
+
+.notificacion.error {
+  background-color: #f44336; /* Rojo para errores */
+}
+
 
 /* Estilo para el footer y gota de agua */
 .water-drop {
