@@ -1,0 +1,128 @@
+/* Fondo con color que simula la gota de agua y cubra toda la pantalla */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #00aaff, #0099cc, #66ccff); /* Degradado tipo agua */
+  min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo del contenedor de tickets */
+.tickets-container {
+  width: 95%; /* Ocupa un 95% del ancho disponible */
+  max-width: 1200px; /* Limita el ancho máximo para evitar que se vea demasiado grande en pantallas grandes */
+  min-height: 100vh; /* Asegura que ocupe todo el alto de la pantalla */
+  background: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-translúcido */
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  overflow: hidden; /* Previene el scroll horizontal */
+}
+
+/* Estilo del encabezado */
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #003366;
+  margin-bottom: 30px; /* Espacio entre el encabezado y el contenido del formulario */
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-secondary, .btn-admin {
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn-secondary:hover, .btn-admin:hover {
+  background-color: #ffaa00;
+}
+
+/* Estilo para los botones */
+.btn-regresar {
+  background-color: #ffcc00;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  margin-top: 20px;
+}
+
+.btn-regresar:hover {
+  background-color: #ffaa00;
+}
+
+/* Estilo de la notificación */
+.notificacion {
+  background-color: #ffcc00;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+/* Estilo para el footer y gota de agua */
+.water-drop {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: #00aaff;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Centramos la descripción dentro del formulario */
+.ticket-form textarea {
+  width: 100%; /* Asegura que el campo de texto ocupe todo el ancho disponible */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical; /* Permite cambiar el tamaño del campo de texto */
+  text-align: center; /* Centra el texto dentro del campo */
+  box-sizing: border-box; /* Incluye el padding dentro del ancho del campo */
+}
+
+/* Aseguramos que el label y el campo de descripción estén alineados correctamente */
+.ticket-form label {
+  font-weight: bold;
+  text-align: center; /* Centra el texto del label */
+  width: 100%;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Cambios para asegurar que el formulario se vea en una lista */
+.ticket-form {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en una columna */
+  gap: 15px; /* Espacio entre los elementos */
+  max-width: 100%; /* Asegura que el formulario no exceda el ancho disponible */
+}
+
+/* Adaptación para pantallas pequeñas (por ejemplo, dispositivos móviles) */
+@media (max-width: 768px) {
+  .ticket-form {
+    gap: 10px; /* Reduce el espacio entre elementos en pantallas pequeñas */
+  }
+}

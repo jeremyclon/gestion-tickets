@@ -1,0 +1,160 @@
+/* Admin.css */
+.admin-container {
+  background: linear-gradient(135deg, #0099ff, #00c6ff);
+  padding: 20px;
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ticket-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-direction: column; /* Cambia la dirección a columna para apilar los elementos */
+  align-items: center; /* Centra los elementos dentro del contenedor */
+}
+
+.ticket-header .btn-regresar {
+  margin-top: 20px; /* Espacio encima del botón */
+  background-color: #ffeb3b; /* Amarillo */
+  color: rgb(8, 8, 8);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.ticket-header .btn-regresar:hover {
+  background: #ffaa00; /* Amarillo más oscuro cuando se pasa el mouse */
+}
+
+
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffefbb;
+  text-align: center; /* Centra el título */
+}
+
+select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
+  width: 200px;
+  display: block;
+  margin: 0 auto 20px auto; /* Centra el select y agrega espacio abajo */
+}
+
+select:focus {
+  outline: none;
+  border-color: #ff6347;
+}
+
+.ticket-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Esto crea 3 columnas de igual tamaño */
+  gap: 20px; /* Espacio entre los tickets */
+  list-style-type: none;
+  padding: 0;
+}
+
+.ticket-list li {
+  background-color: #ffffff80;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.ticket-list li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-list li strong {
+  font-size: 1.2rem;
+}
+
+.ticket-list li p {
+  margin: 5px 0;
+}
+
+.ticket-list select {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ticket-list select:focus {
+  outline: none;
+  border-color: #ff6347;
+}
+
+/* Admin.css */
+.btn-logout {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 16px; /* Reducir el padding para hacerlo más compacto */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem; /* Puedes ajustar el tamaño de la fuente si es necesario */
+  width: auto; /* Asegúrate de que el ancho se ajuste al contenido */
+}
+
+.btn-logout:hover {
+  background-color: #d32f2f;
+}
+
+
+/* Estilo para el botón de "Regresar a Inicio" */
+.btn-regresar {
+   /* Color amarillo */
+   background: #ffaa00;
+  color: black; /* Texto en negro */
+  padding: 10px 20px; /* Ajuste en el tamaño */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: block; /* Hace que el botón se comporte como bloque */
+  margin: 0 auto 20px auto; /* Centrado */
+}
+
+.btn-regresar:hover {
+  background: #ffaa00; 
+   /* Color amarillo oscuro al pasar el ratón */
+}
+
+.water-drop {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #00c6ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
